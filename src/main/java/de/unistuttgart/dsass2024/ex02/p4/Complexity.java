@@ -74,11 +74,9 @@ public class Complexity {
     public static int isDoneBetter3(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("n must not be negative!");
-        }
-        if (n <= 1) {
+        } else if (n <= 1) {
             return n;
         }
-
         int previous = 0;
         int current = 1;
         int next = 1;
